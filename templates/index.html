@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem ipsum</title>
+    <script>
+      function sendRequest(url) {
+        fetch(url, { method: "POST" })
+          .then((response) => response.text())
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Error:", error));
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="sendRequest('/start')">Lorem</button>
+    <button onclick="sendRequest('/stop')">Ipsum</button>
+  </body>
+</html>
